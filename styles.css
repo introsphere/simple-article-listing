@@ -1,0 +1,113 @@
+/* Basic Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2rem;
+  font-size: 16px;
+  font-family: "Poppins";
+  background-color: #F8FAFC;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.thumbnail {
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4D5562;
+}
+
+/* Alignment */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2.625rem;
+  margin: 2.625rem 0;
+}
+
+.separator {
+  width: 11.25rem;
+  height: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.25rem;
+  width: 100%;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  gap: 3.25rem;
+}
+
+/* Media Queries */
+@media (min-width: 640px) {
+  .main-container {
+    max-width: 736px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 640px) {
+  h1 {
+    max-width: 560px;
+  }
+}
+
+@media (min-width: 1280px) {
+  h1 {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --heading-large: 1.5rem;
+    --heading-small: 0.9rem;
+    --text-small: 0.75rem;
+  }
+
+  h1 {
+    font-size: var(--heading-large);
+  }
+
+  h3 {
+    font-size: var(--heading-small);
+  }
+
+  p {
+    font-size: var(--text-small);
+  }
+
+  .thumbnail {
+    max-width: 130px;
+  }
+}
